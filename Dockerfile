@@ -1,2 +1,5 @@
 FROM nginx
-COPY ks_files /usr/share/nginx/html
+
+RUN mkdir /usr/share/nginx/html/setup
+
+COPY ks_files/* /usr/share/nginx/html/setup/
